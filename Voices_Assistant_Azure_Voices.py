@@ -1,4 +1,6 @@
+import time
 import pyttsx3
+from newspaper import Article
 import keyboard
 import webbrowser
 import azure.cognitiveservices.speech as speechsdk
@@ -81,11 +83,38 @@ def listen():
         return ""
 
 
+def saludar():
+    # Obtenemos el momento actual del sistema
+    ahora = time.localtime()
+    # Obtenemos la hora actual
+    hora = ahora.tm_hour
+    # Creamos una variable para guardar el saludo
+    saludo = ""
+    # Dependiendo de la hora, asignamos un saludo diferente
+    if hora < 12:
+        saludo = "Buenos días"
+        return saludo
+    elif hora < 18:
+        saludo = "Buenas tardes"
+        return saludo
+    else:
+        saludo = "Buenas noches"
+        return saludo
+
+
+# Creamos el texto que vamos a decir
+text = saludar()
+# Usamos la función speak para decir el texto
+speak(text)
+
+
 # Crea un bucle infinito para escuchar continuamente
 while True:
+
     # Escucha el audio
     text = listen()
     print(f"Texto reconocido: {text}")  # Aquí mostramos el texto en la consola
+
     # Si el texto contiene la palabra clave, activa el asistente
     if text.startswith('good afternoon'):
         saludo = text.replace('asistente', '')
@@ -93,11 +122,42 @@ while True:
         speak(text)
         print("Activación correcta")
 
+    elif 'hora' in text:
+        # Obtenemos el momento actual del sistema
+        ahora = time.localtime()
+        # Obtenemos la hora actual
+        hora = ahora.tm_hour
+        minuto = ahora.tm_min
+        # Creamos el texto que vamos a decir
+        text = f"Son las {hora} y {minuto}"
+        # Usamos la función speak para decir el texto
+        speak(text)
+
     elif 'wikipedia' in text:
 
         # Abrir la página web con webbrowser
         url = f'https://wikipedia.org'
         webbrowser.open(url)
+
+    elif 'leer noticia' in text:
+        # Probamos la función con un ejemplo de URL
+        url = "https://www.bbc.com/news/world-us-canada-67317218"
+
+        # Creamos un objeto Article con la URL
+        articulo = Article(url)
+        # Descargamos el contenido HTML de la página
+        articulo.download()
+        # Analizamos el contenido HTML y extraemos los datos relevantes
+        articulo.parse()
+
+        speak(articulo.title)
+        print(articulo.title)
+
+        speak(articulo.authors)
+        print(articulo.authors)
+
+        print(articulo.text)
+        speak(articulo.text)
 
     # Si el texto contiene la palabra 'buscar', busca en Google lo que sigue
     elif text.startswith('buscar'):
@@ -144,7 +204,7 @@ while True:
 
     elif 'desmutea' in text or 'activa el audio' in text or 'desactiva el audio' in text or 'desactiva el sonido' in text:
 
-        keyboard.send('D')  # Silenciar el equipo Hp pavilion
+        keyboard.send('D')  # Quitar el silecio equipo Hp pavilion
         text = 'Se ha quitado el silencio del equipo'
         speak(text)
 
