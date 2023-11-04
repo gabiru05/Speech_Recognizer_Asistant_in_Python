@@ -25,15 +25,33 @@ Este proyecto utiliza el servicio de reconocimiento de voz de Azure para convert
 
 ## Requisitos
 
--    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Se - Python 3.7 o superior
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Python 3.7 o superior
      `Por ahora solamente lo he probado con Python 3.11.6`
+Descarga [Aqui](https://www.python.org/downloads/)
 
--    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">- azure-cognitiveservices-speech
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Azure-cognitiveservices-speech
 
--    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"> - py keyboard
--    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"> - PyAudio
+```sh
+ pip install azure-cognitiveservices-speech
+```
 
--    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">py newspaper3k
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Py keyboard
+
+```sh
+pip install keyboard
+```
+
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">PyAudio
+
+```sh
+pip install PyAudio
+```
+
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Py newspaper3k
+
+```sh
+pip install newspaper3k
+```
 
 <br>
 <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line">
@@ -43,6 +61,7 @@ Este proyecto utiliza el servicio de reconocimiento de voz de Azure para convert
 -    Clonar el repositorio o descargar el código fuente
 -    Instalar las dependencias con el comando `pip install -r requirements.txt`
 -    Crear una cuenta de Azure y obtener una clave y una región para el servicio de reconocimiento de voz
+     Revisa [Este articulo](https://learn.microsoft.com/es-es/azure/ai-services/speech-service/get-started-speech-to-text?tabs=windows%2Cterminal&pivots=programming-language-python)
 -    Crear un archivo `.env` en la carpeta del proyecto y agregar las variables `AZURE_KEY` y `AZURE_REGION` con los valores correspondientes
 -    Ejecutar el archivo `Voices_Assistant_Azure_Voices.py` con el comando `python Voices_Assistant_Azure_Voices.py`
 
