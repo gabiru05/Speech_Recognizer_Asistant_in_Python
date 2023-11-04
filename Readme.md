@@ -1,38 +1,65 @@
-FUNCIONAMIENTO DEL PROYECTO
-requerido:
-pip install pocketsphinx
+<a name="readme-top"></a>
 
-para el funcionamiento de azure es necesario:
-pip install azure-cognitiveservices-speech
-en caso de querer solo actualizar seria:
-pip install --upgrade azure-cognitiveservices-speech
-para verificar esta en tu variable del sistema:
-pip list
+<h1 align="center">
+  <br>
+  Asistente de voz con Azure  <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/SVGs/azure.svg" height="70px" width="100px">
+</h1>
 
-#Ofline recognizer
-#14 MB of size
-pip install vosk
+<h4 align="center">
 
-ir al siguiente sitio y descargar tu lenguaje:
-https://alphacephei.com/vosk/models
+Este proyecto utiliza el servicio de reconocimiento de voz de Azure para convertir la voz en texto y realizar algunas acciones según el texto.
 
-Obtener Api Key para AzureSpeech:
+</h4>
 
-Inicia sesión en el portal de Azure y busca el servicio de Speech.
+<br>
+<img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line">
 
-Haz clic en “Crear” y elige un nombre, una suscripción, un grupo de recursos y una región para tu recurso de Speech.
+## Características
 
-Haz clic en “Revisar y crear” y luego en “Crear” para crear tu recurso de Speech.
+-    Reconoce la voz en español e inglés
+-    Responde a comandos simples como "abrir wikipedia", "buscar en google", "cerrar la ventana", etc.
+-    Tiene una interfaz gráfica simple y amigable para tener idea de las ultimas acciones
 
-Una vez que se haya creado tu recurso, haz clic en “Ir al recurso” y luego en “Claves y punto de conexión” en el panel izquierdo.
+<br>
+<img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line">
 
-Allí verás dos claves de API que puedes usar para acceder al servicio de Speech. Copia una de las claves y guárdala en un lugar seguro.
+## Requisitos
 
-pip install keyboard
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Se - Python 3.7 o superior
+     `Por ahora solamente lo he probado con Python 3.11.6`
 
-para resumen
-pip install beautifulsoup
-pip install openai
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">- azure-cognitiveservices-speech
 
-usando newspaper
-python -m pip install newspaper3k
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"> - py keyboard
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"> - PyAudio
+
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">py newspaper3k
+
+<br>
+<img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line">
+
+## Instalación
+
+-    Clonar el repositorio o descargar el código fuente
+-    Instalar las dependencias con el comando `pip install -r requirements.txt`
+-    Crear una cuenta de Azure y obtener una clave y una región para el servicio de reconocimiento de voz
+-    Crear un archivo `.env` en la carpeta del proyecto y agregar las variables `AZURE_KEY` y `AZURE_REGION` con los valores correspondientes
+-    Ejecutar el archivo `Voices_Assistant_Azure_Voices.py` con el comando `python Voices_Assistant_Azure_Voices.py`
+
+<br>
+
+<img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line">
+
+## Uso
+
+-    Ejecutar el archivo `Voices_Assistant_Azure_Voices ` para comenzar a escuchar la voz
+-    Hablar al micrófono y esperar a que el texto aparezca en la terminal
+-    Presionar el botón "Detener" para terminar de escuchar la voz
+-    Mencionar la palabra "Salir" para cerrar el programa
+
+<br>
+<img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line">
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más información.
