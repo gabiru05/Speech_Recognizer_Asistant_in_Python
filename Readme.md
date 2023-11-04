@@ -30,3 +30,6 @@ Haz clic en “Revisar y crear” y luego en “Crear” para crear tu recurso d
 Una vez que se haya creado tu recurso, haz clic en “Ir al recurso” y luego en “Claves y punto de conexión” en el panel izquierdo.
 
 Allí verás dos claves de API que puedes usar para acceder al servicio de Speech. Copia una de las claves y guárdala en un lugar seguro.
+
+
+pip install keyboard
