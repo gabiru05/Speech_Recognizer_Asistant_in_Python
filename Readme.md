@@ -27,7 +27,7 @@ Este proyecto utiliza el servicio de reconocimiento de voz de Azure para convert
 
 -    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Python 3.7 o superior
      `Por ahora solamente lo he probado con Python 3.11.6`
-Descarga [Aqui](https://www.python.org/downloads/)
+     Descarga[Aqui](https://www.python.org/downloads/)
 
 -    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Azure-cognitiveservices-speech
 
@@ -39,6 +39,12 @@ Descarga [Aqui](https://www.python.org/downloads/)
 
 ```sh
 pip install keyboard
+```
+
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Pynput
+
+```sh
+pip install pynput
 ```
 
 -    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">PyAudio
