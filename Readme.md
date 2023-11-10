@@ -2,22 +2,24 @@
 
 <h1 align="center">
   <br>
-  Asistente de voz con Azure  <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/SVGs/azure.svg" height="70px" width="100px">
+  Asistente de voz con Azure  <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/SVGs/azure.svg" height="50px" width="50px">
 </h1>
 
 <h4 align="center">
-
-Este proyecto utiliza el servicio de reconocimiento de voz de Azure para convertir la voz en texto y realizar algunas acciones según el texto.
-
+Este proyecto utiliza el servicio de reconocimiento de voz de Azure para convertir la voz en texto y realizar algunas acciones según tus ordenes.
 </h4>
+
+Reach me at: [![GitHub](https://img.shields.io/badge/GitHub-gabiru05-58f195.svg?logo=github&logoColor=white)]
+
+My OS: ![Windows 11](https://img.shields.io/badge/Windows%2011-0078D6?logo=microsoft&logoColor=white) ![Nobara Linux](https://img.shields.io/badge/Nobara_Linux-000000?logo=linux&logoColor=white)
 
 <br>
 <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line">
 
 ## Características
 
--    Reconoce la voz en español e inglés
--    Responde a comandos simples como "abrir wikipedia", "buscar en google", "cerrar la ventana", etc.
+-    Reconocimiento de voz en español
+-    Responde a comandos simples como "abrir wikipedia", "buscar en google", "que hora es?", etc.
 -    Tiene una interfaz gráfica simple y amigable para tener idea de las ultimas acciones
 
 <br>
@@ -35,10 +37,11 @@ Este proyecto utiliza el servicio de reconocimiento de voz de Azure para convert
  pip install azure-cognitiveservices-speech
 ```
 
--    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Py keyboard
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Geopy
 
 ```sh
-pip install keyboard
+pip install geopy
+
 ```
 
 -    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Pynput
@@ -47,16 +50,26 @@ pip install keyboard
 pip install pynput
 ```
 
--    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">PyAudio
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Request
 
 ```sh
-pip install PyAudio
+pip install requests
+
 ```
 
--    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Py newspaper3k
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Pycountry
 
 ```sh
-pip install newspaper3k
+pip install pycountry
+
+```
+
+-    <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy">Unidecode
+
+```sh
+pip install unidecode
+
+
 ```
 
 <br>
@@ -65,11 +78,10 @@ pip install newspaper3k
 ## Instalación
 
 -    Clonar el repositorio o descargar el código fuente
--    Instalar las dependencias con el comando `pip install -r requirements.txt`
+-    Instalar las dependencias con el comando `pip install -r requirements.txt` o instalar manualmente los requisitos anteriores
 -    Crear una cuenta de Azure y obtener una clave y una región para el servicio de reconocimiento de voz
      Revisa [Este articulo](https://learn.microsoft.com/es-es/azure/ai-services/speech-service/get-started-speech-to-text?tabs=windows%2Cterminal&pivots=programming-language-python)
--    Crear un archivo `.env` en la carpeta del proyecto y agregar las variables `AZURE_KEY` y `AZURE_REGION` con los valores correspondientes
--    Ejecutar el archivo `Voices_Assistant_Azure_Voices.py` con el comando `python Voices_Assistant_Azure_Voices.py`
+-    Listo ejecutar el archivo `main.py` con el comando `python main.py`
 
 <br>
 
@@ -77,7 +89,7 @@ pip install newspaper3k
 
 ## Uso
 
--    Ejecutar el archivo `Voices_Assistant_Azure_Voices ` para comenzar a escuchar la voz
+-    Ejecutar el archivo `main.py` para comenzar a escuchar la voz
 -    Hablar al micrófono y esperar a que el texto aparezca en la terminal
 -    Presionar el botón "Detener" para terminar de escuchar la voz
 -    Mencionar la palabra "Salir" para cerrar el programa
@@ -85,6 +97,15 @@ pip install newspaper3k
 <br>
 <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line">
 
-## Licencia
+## Sección Experimental
 
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más información.
+**Nota:** Esta sección contiene archivos o funciones experimentales que pueden no funcionar correctamente o generar errores. Utiliza estas herramientas bajo tu propia responsabilidad.
+
+### Pruebas con el Traductor
+
+En esta sección, estoy realizando pruebas con el traductor utilizando las siguientes bibliotecas y los archivos que se encuentran dentro de la carpeta llamada Utilidades_Experimentales:
+
+-    `googletrans` (pip install googletrans)
+-    `langdetect` (pip install langdetect)
+
+Ten en cuenta que el funcionamiento de estas bibliotecas puede variar en mis códigos, y no puedo garantizar su estabilidad en todos los casos. Si encuentras problemas o tienes sugerencias para mejorar esta sección, por favor, avísame.

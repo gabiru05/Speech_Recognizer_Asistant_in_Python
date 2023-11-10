@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc.exe compilar archivo activo",
+			"command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-I",
+				
+				"C:\\Users\\gabri\\AppData\\Local\\Programs\\Python\\Python311\\include",
+				
+                "C:\\Users\\gabri\\AppData\\Local\\Programs\\Python\\Python311\\include\\internal",
+                "C:\\Users\\gabri\\AppData\\Local\\Programs\\Python\\Python311\\include\\cpython",
+                "C:\\Users\\gabri\\AppData\\Local\\Programs\\Python\\Python311"
+
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compilador: C:\\msys64\\ucrt64\\bin\\gcc.exe"
+		}
+	]
+}

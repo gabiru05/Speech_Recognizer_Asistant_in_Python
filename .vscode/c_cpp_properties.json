@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Users\\gabri\\AppData\\Local\\Programs\\Python\\Python311\\include",
+                "C:\\Users\\gabri\\AppData\\Local\\Programs\\Python\\Python311\\include\\internal",
+                "C:\\Users\\gabri\\AppData\\Local\\Programs\\Python\\Python311\\include\\cpython",
+                "C:\\Users\\gabri\\AppData\\Local\\Programs\\Python\\Python311"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}
