@@ -9,7 +9,7 @@
 Este proyecto utiliza el servicio de reconocimiento de voz de Azure para convertir la voz en texto y realizar algunas acciones según tus ordenes.
 </h4>
 
-Reach me at: [![GitHub](https://img.shields.io/badge/GitHub-gabiru05-58f195.svg?logo=github&logoColor=white)]
+Reach me at: [![GitHub](https://img.shields.io/badge/GitHub-gabiru05-58f195.svg?logo=github&logoColor=white)](https://github.com/gabiru05)
 
 My OS: ![Windows 11](https://img.shields.io/badge/Windows%2011-0078D6?logo=microsoft&logoColor=white) ![Nobara Linux](https://img.shields.io/badge/Nobara_Linux-000000?logo=linux&logoColor=white)
 
